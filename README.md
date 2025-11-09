@@ -36,21 +36,43 @@ Copiar código
 ## Execução com Docker
 
 ### 1. Build da Imagem
-```bash
+1. Build da Imagem
+
+Execute o comando dentro da pasta do projeto:
+
 docker build -t nous-api .
+
 2. Subir os Containers
-bash
-Copiar código
+
+Após gerar a imagem, execute:
+
 docker compose up -d
-3. Verificar se estão rodando
-bash
-Copiar código
+
+
+Isso iniciará todos os serviços definidos no arquivo docker-compose.yml.
+
+3. Verificar se os Containers Estão Rodando
+
+Use o comando:
+
 docker ps
+
+
+Você deverá visualizar algo similar a:
+
+CONTAINER ID   IMAGE                  STATUS
+xxxxxx         nous-devops-api-aluno  Up
+xxxxxx         nous-devops-api-painel Restarting/Up
+
 4. Acessar a Aplicação
-Abra o navegador e vá para:
+
+Abra o navegador e acesse:
+
 http://localhost:8080
 
-Se tudo estiver certo, verá a mensagem:
+
+Se tudo estiver correto, verá a mensagem:
+
 Servidor NOUS API do Aluno rodando com sucesso!
 
 Tecnologias Utilizadas
