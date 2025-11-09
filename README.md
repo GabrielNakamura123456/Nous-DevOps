@@ -91,5 +91,4 @@ Arquitetura Resumida
 Repositório
 https://github.com/GabrielNakamura123456/Nous-DevOps
 
-perl
-Copiar código
+
