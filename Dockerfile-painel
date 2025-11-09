@@ -1,0 +1,11 @@
+# Projeto NOUS - API do Painel
+# Integrantes:
+# - Gabriel Nakamura Ogata – RM560671
+# - Julio César Dias Vilella – RM560494
+# - Guilherme Costeira Braganholo – RM560628
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+COPY . .
+EXPOSE 8081
+ENTRYPOINT ["dotnet", "NousPainel.dll"]

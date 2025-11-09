@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  api-aluno:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nous-api-aluno
+    ports:
+      - "8080:8080"
+    restart: always
+
+  api-painel:
+    build:
+      context: .
+      dockerfile: Dockerfile-painel
+    container_name: nous-api-painel
+    ports:
+      - "8081:8081"
+    restart: always
+
+
