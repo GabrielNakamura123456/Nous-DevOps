@@ -76,15 +76,16 @@ Docker e Docker Compose
 Windows 11 + WSL2 (Linux)
 
 Oracle Cloud Infrastructure (simulado)
-
 Arquitetura Resumida
-Camada	Tecnologia	Função
-Banco de Dados	Oracle Database 23ai	Armazenamento + IA Vector Search
-Backend (Aluno)	Java + Spring Boot	APIs REST do app mobile
-Backend (Painel)	C# + ASP.NET Core	APIs REST para dashboards
-Front-end Web	Oracle APEX	Painéis analíticos
-Mobile	React Native + Expo	Interface principal do aluno
-IA	Oracle OCI GenAI	Processamento semântico e preditivo
+| Camada           | Tecnologia           | Função                              |
+| ---------------- | -------------------- | ----------------------------------- |
+| Banco de Dados   | Oracle Database 23ai | Armazenamento + IA Vector Search    |
+| Backend (Aluno)  | Java + Spring Boot   | APIs REST do app mobile             |
+| Backend (Painel) | C# + ASP.NET Core    | APIs REST para dashboards           |
+| Front-end Web    | Oracle APEX          | Painéis analíticos                  |
+| Mobile           | React Native + Expo  | Interface principal do aluno        |
+| IA               | Oracle OCI GenAI     | Processamento semântico e preditivo |
+
 
 Repositório
 https://github.com/GabrielNakamura123456/Nous-DevOps
