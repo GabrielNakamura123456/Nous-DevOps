@@ -67,11 +67,12 @@ arduino
 Copiar código
 Servidor NOUS API do Aluno rodando com sucesso!
 Tecnologias Utilizadas
-Java 17 (API principal do aluno)
 
-.NET Core (API do painel de gestão)
+Java 17 — API principal do aluno
 
-Docker e Docker Compose
+.NET Core — API do painel de gestão
+
+Docker & Docker Compose
 
 Windows 11 + WSL2 (Linux)
 
