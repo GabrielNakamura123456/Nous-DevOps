@@ -1,31 +1,21 @@
-NOUS - DevOps Tools e Cloud Computing
-Integrantes do Grupo
+# NOUS - DevOps Tools e Cloud Computing
 
-Gabriel Nakamura Ogata – RM560671
+## Integrantes do Grupo
+- **Gabriel Nakamura Ogata – RM560671**
+- **Guilherme Costeira Braganholo – RM560628**
+- **Julio Cesar Dias Vilella – RM560494**
 
-Guilherme Costeira Braganholo – RM560628
+---
 
-Julio Cesar Dias Vilella – RM560494
+## Visão Geral do Projeto
+O **NOUS** é uma plataforma que une educação e saúde mental, oferecendo apoio emocional e orientação educacional personalizada para jovens brasileiros, com base em IA Generativa da Oracle.
 
-Visão Geral do Projeto
+Este repositório contém a parte de **DevOps e Cloud Computing** do projeto: ambiente Docker, build de imagem, containers e orquestração com Docker Compose.
 
-O NOUS é uma plataforma digital que une educação e saúde mental, oferecendo apoio emocional e orientação educacional personalizada para jovens brasileiros, com base em Inteligência Artificial Generativa da Oracle.
+---
 
-Este repositório contém a parte de DevOps e Cloud Computing do projeto, com:
+## Estrutura do Repositório
 
-Configuração do ambiente Docker
-
-Build da imagem da API
-
-Criação e execução de containers
-
-Orquestração via Docker Compose
-
-Código-fonte da API Java
-
-DLL do painel em .NET
-
-Estrutura do Repositório
 nous-devops/
 ├── Dockerfile
 ├── Dockerfile-painel
@@ -37,72 +27,67 @@ nous-devops/
 ├── NousPainel.dll
 └── README.md
 
-Execução com Docker
-1. Build da Imagem
+yaml
+Copiar código
 
-Execute o comando dentro da pasta do projeto:
+---
 
+## Execução com Docker
+
+### 1) Build da Imagem
+Execute dentro da pasta do projeto:
+```bash
 docker build -t nous-api .
-
-2. Subir os Containers
-
-Após gerar a imagem, execute:
-
+2) Subir os Containers
+bash
+Copiar código
 docker compose up -d
+Irá iniciar os serviços definidos no docker-compose.yml.
 
-
-Isso iniciará todos os serviços definidos no arquivo docker-compose.yml.
-
-3. Verificar os Containers em Execução
-
-Use o comando:
-
+3) Verificar Containers em Execução
+bash
+Copiar código
 docker ps
+Exemplo de saída esperada:
 
+mathematica
+Copiar código
+CONTAINER ID   IMAGE                    STATUS
+xxxxxx         nous-devops-api-aluno    Up
+xxxxxx         nous-devops-api-painel   Restarting/Up
+4) Acessar a Aplicação
+Abra no navegador:
 
-Resultado esperado:
-
-CONTAINER ID       IMAGE                    STATUS
-xxxxxxxxxx         nous-devops-api-aluno     Up
-xxxxxxxxxx         nous-devops-api-painel    Restarting/Up
-
-4. Acessar a Aplicação
-
-Abra o navegador e acesse:
-
+arduino
+Copiar código
 http://localhost:8080
+Mensagem esperada:
 
-
-Você deverá ver a mensagem:
-
+arduino
+Copiar código
 Servidor NOUS API do Aluno rodando com sucesso!
-
 Tecnologias Utilizadas
+Java 17 (API principal do aluno)
 
-Java 17 — API principal do aluno
+.NET Core (API do painel de gestão)
 
-.NET Core — API do painel de gestão
-
-Docker
-
-Docker Compose
+Docker e Docker Compose
 
 Windows 11 + WSL2 (Linux)
 
 Oracle Cloud Infrastructure (simulado)
 
-Oracle OCI GenAI (inteligência artificial)
-
-Oracle APEX (dashboards e análise)
-
 Arquitetura Resumida
 Camada	Tecnologia	Função
-Banco de Dados	Oracle Database 23ai	Armazenamento e IA Vector Search
+Banco de Dados	Oracle Database 23ai	Armazenamento + IA Vector Search
 Backend (Aluno)	Java + Spring Boot	APIs REST do app mobile
 Backend (Painel)	C# + ASP.NET Core	APIs REST para dashboards
 Front-end Web	Oracle APEX	Painéis analíticos
 Mobile	React Native + Expo	Interface principal do aluno
-Inteligência Artificial	Oracle OCI GenAI	Processamento semântico e preditivo
-Repositório GitHub
+IA	Oracle OCI GenAI	Processamento semântico e preditivo
 
+Repositório
 https://github.com/GabrielNakamura123456/Nous-DevOps
+
+perl
+Copiar código
