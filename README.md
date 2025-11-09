@@ -1,22 +1,31 @@
-# NOUS - DevOps Tools e Cloud Computing
+NOUS - DevOps Tools e Cloud Computing
+Integrantes do Grupo
 
-## Integrantes do Grupo
-- Gabriel Nakamura Ogata – RM560671  
-- Guilherme Costeira Braganholo – RM560628  
-- Julio Cesar Dias Vilella – RM560494  
+Gabriel Nakamura Ogata – RM560671
 
----
+Guilherme Costeira Braganholo – RM560628
 
-## Visão Geral do Projeto
+Julio Cesar Dias Vilella – RM560494
 
-O NOUS é uma plataforma digital que une educação e saúde mental, oferecendo apoio emocional e orientação educacional personalizada para jovens brasileiros, com base em Inteligência Artificial Generativa da Oracle.  
+Visão Geral do Projeto
 
-Este repositório contém a parte DevOps e Cloud Computing do projeto — com o ambiente Docker configurado, imagens e containers para o microsserviço principal da NOUS API do Aluno.
+O NOUS é uma plataforma digital que une educação e saúde mental, oferecendo apoio emocional e orientação educacional personalizada para jovens brasileiros, com base em Inteligência Artificial Generativa da Oracle.
 
----
+Este repositório contém a parte de DevOps e Cloud Computing do projeto, com:
 
-## Estrutura do Repositório
+Configuração do ambiente Docker
 
+Build da imagem da API
+
+Criação e execução de containers
+
+Orquestração via Docker Compose
+
+Código-fonte da API Java
+
+DLL do painel em .NET
+
+Estrutura do Repositório
 nous-devops/
 ├── Dockerfile
 ├── Dockerfile-painel
@@ -28,14 +37,7 @@ nous-devops/
 ├── NousPainel.dll
 └── README.md
 
-yaml
-Copiar código
-
----
-
-## Execução com Docker
-
-### 1. Build da Imagem
+Execução com Docker
 1. Build da Imagem
 
 Execute o comando dentro da pasta do projeto:
@@ -51,18 +53,18 @@ docker compose up -d
 
 Isso iniciará todos os serviços definidos no arquivo docker-compose.yml.
 
-3. Verificar se os Containers Estão Rodando
+3. Verificar os Containers em Execução
 
 Use o comando:
 
 docker ps
 
 
-Você deverá visualizar algo similar a:
+Resultado esperado:
 
-CONTAINER ID   IMAGE                  STATUS
-xxxxxx         nous-devops-api-aluno  Up
-xxxxxx         nous-devops-api-painel Restarting/Up
+CONTAINER ID       IMAGE                    STATUS
+xxxxxxxxxx         nous-devops-api-aluno     Up
+xxxxxxxxxx         nous-devops-api-painel    Restarting/Up
 
 4. Acessar a Aplicação
 
@@ -71,32 +73,36 @@ Abra o navegador e acesse:
 http://localhost:8080
 
 
-Se tudo estiver correto, verá a mensagem:
+Você deverá ver a mensagem:
 
 Servidor NOUS API do Aluno rodando com sucesso!
 
 Tecnologias Utilizadas
-Java 17 (API principal do aluno)
 
-.NET Core (API do painel de gestão)
+Java 17 — API principal do aluno
 
-Docker e Docker Compose
+.NET Core — API do painel de gestão
 
-Oracle Cloud Infrastructure (IaaS - simulado)
+Docker
+
+Docker Compose
 
 Windows 11 + WSL2 (Linux)
 
+Oracle Cloud Infrastructure (simulado)
+
+Oracle OCI GenAI (inteligência artificial)
+
+Oracle APEX (dashboards e análise)
+
 Arquitetura Resumida
 Camada	Tecnologia	Função
-Banco de Dados	Oracle Database 23ai	Armazenamento relacional e IA Vector Search
+Banco de Dados	Oracle Database 23ai	Armazenamento e IA Vector Search
 Backend (Aluno)	Java + Spring Boot	APIs REST do app mobile
 Backend (Painel)	C# + ASP.NET Core	APIs REST para dashboards
 Front-end Web	Oracle APEX	Painéis analíticos
 Mobile	React Native + Expo	Interface principal do aluno
-IA	Oracle OCI GenAI	Processamento semântico e preditivo
+Inteligência Artificial	Oracle OCI GenAI	Processamento semântico e preditivo
+Repositório GitHub
 
-
-
-
-
-Repositório GitHub: https://github.com/GabrielNakamura123456/Nous-DevOps
+https://github.com/GabrielNakamura123456/Nous-DevOps
