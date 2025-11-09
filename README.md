@@ -75,7 +75,6 @@ IA	Oracle OCI GenAI	Processamento semântico e preditivo
 
 
 
-Documentação Complementar
-PDF Entregue: Relatório DevOps & Cloud Computing com prints, evidências e descrição técnica.
+
 
 Repositório GitHub: https://github.com/GabrielNakamura123456/Nous-DevOps
